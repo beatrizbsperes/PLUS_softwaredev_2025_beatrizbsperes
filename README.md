@@ -14,5 +14,5 @@ This document will recreate the step on how to perform assignment 2 from Practic
 6. **Check the packages** Just for fun we can check the installed packages using the command `conda list`. See the image bellow :) ![Alt Text](_images/6_CondaList.png)
 
 
-7. **And it's done** Considering we need to recreate two enviroments, we just need to redo all the command but specifying the other environment we want to recreate. You can use the following command lines:  `conda env create -f software_dev_v2.yml` + `conda activate software_dev_v2.yml` + `conda list`
+7. **And it's done** Considering we need to recreate two enviroments, we just need to redo all the command but specifying the other environment we want to recreate. You can use the following command lines:  `conda env create -f software_dev_v2.yml` + `conda activate software_dev_v2.yml` + `conda list`. The image bellows shows the end result of recreating the second environment ![Alt Text](_images/7_SecondEnv.png)
 
