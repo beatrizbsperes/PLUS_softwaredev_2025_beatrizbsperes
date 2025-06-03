@@ -1,0 +1,15 @@
+name: a3_lidar
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - scipy
+  - matplotlib
+  - rasterio
+  - laspy
+  - jupyter
+  - pip
+  - pip:
+    - laspy[lazrs]
