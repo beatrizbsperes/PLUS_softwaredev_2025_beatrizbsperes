@@ -27,32 +27,20 @@ This project leverages several key Python geospatial libraries:
 
 ## Installation
 
-### Create Conda Environment
+### Prerequisites
+- [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed
+
+### Setup Environment
 
 ```bash
-# Clone this repository
-git clone <your-repo-url>
-cd <your-repo-name>
-
 # Create conda environment from file
 conda env create -f environment.yml
 
 # Activate environment
-conda activate lidar-processing
-```
+conda activate a3_lidar
 
-### Manual Installation
-
-```bash
-# Create new environment
-conda create -n lidar-processing python=3.9
-
-# Activate environment
-conda activate lidar-processing
-
-# Install packages
-conda install -c conda-forge numpy scipy matplotlib rasterio laspy jupyter proj gdal
-pip install laspy[lazrs]
+# Launch Jupyter notebook
+jupyter notebook
 ```
 
 ## Useful links
