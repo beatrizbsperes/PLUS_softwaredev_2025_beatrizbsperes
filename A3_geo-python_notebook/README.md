@@ -1,6 +1,6 @@
 # LiDAR Point Cloud Processing and DEM with Python
 
-A simple Python toolkit for processing LiDAR point cloud data, including reading, downsampling, ground classification and DEM generation.
+A simple Python toolkit for processing LiDAR point cloud data, including reading, downsampling, ground classification and DEM generation. This work was based on a project previous developed. You can find it under this [repo](https://github.com/beatrizbsperes/LiDARClassification)
 
 ## Overview
 
