@@ -1,29 +1,21 @@
-# LiDAR Point Cloud Processing and DEM with Python
+# Sentinel-2 Image Segmentation and Land Cover Classification unsing NDVI
 
-A simple Python toolkit for processing LiDAR point cloud data, including reading, downsampling, ground classification and DEM generation. This work was based on a project previous developed. You can find it under this [repo](https://github.com/beatrizbsperes/LiDARClassification)
+A Python module and Jupyter Notebook workflow for object-based image analysis (OBIA) of Sentinel-2 satellite imagery. This toolkit provides tools for segmentation, NDVI computation and land cover classification of vegetation, water bodies, and other surfaces. 
 
 ## Overview
 
-Here you'll find a Jupyter notebook demonstrating basic LiDAR processing workflows using Python geospatial libraries. There is also a data folder in whcih you can use samples of simple point clouds.
+This repository includes a Python script for processing Sentinel-2 scenes, along with a Jupyter Notebook demonstrating each function step-by-step. The goal is to showcase OBIA-based classification using spectral bands and segmentation.
+
+You can use this workflow with your own Sentinel-2 images in GeoTIFF format.
 
 ## Features
 
-- **Point Cloud Reading**: Load LAS files using laspy
-- **Data Downsampling**: Spatial binning for performance optimization
-- **Ground Classification**: Height-based filtering with neighborhood analysis
-- **DEM Generation**: Create Digital Elevation Models through spatial interpolation
-- **GeoTIFF Export**: Save results for use in GIS applications
-- **Visualization**: Generate plots and analysis visualizations
-
-## Libraries Used
-
-This project leverages several key Python geospatial libraries:
-
-- **[laspy](https://laspy.readthedocs.io/en/latest/)**: Standard LAS/LAZ file I/O
-- **[scipy](https://docs.scipy.org/doc/scipy/reference/spatial.html)**: Spatial operations and interpolation
-- **[rasterio](https://rasterio.readthedocs.io/en/latest/)**: Raster operations and GeoTIFF export
-- **[numpy](https://numpy.org/doc/stable/)**: Numerical computations
-- **[matplotlib](https://matplotlib.org/stable/contents.html)**: Data visualization
+- **Image Loading**: Read Sentinel-2 GeoTIFF images with selected RGB+NIR bands
+- **Image Segmentation**: Superpixel segmentation using `skimage.slic`
+- **NDVI Calculation**: Compute Normalized Difference Vegetation Index
+- **Land Cover Classification**: Segment-wise classification of vegetation, water and other surface types
+- **Visualization**: Display segmented regions and classification map
+  
 
 ## Installation
 
@@ -37,20 +29,17 @@ This project leverages several key Python geospatial libraries:
 conda env create -f environment.yml
 
 # Activate environment
-conda activate a3_lidar
+conda activate a4_obia
 
 # Launch Jupyter notebook
 jupyter notebook
 ```
 
-## Useful links
+## Usage
 
-- **laspy Documentation**: https://laspy.readthedocs.io/en/latest/
-- **scipy.spatial Documentation**: https://docs.scipy.org/doc/scipy/reference/spatial.html
-- **rasterio Documentation**: https://rasterio.readthedocs.io/en/latest/
-- **numpy Documentation**: https://numpy.org/doc/stable/
-- **matplotlib Documentation**: https://matplotlib.org/stable/contents.html
-
+- Use the Python script (`a4_obia.py`) to access individual functions in other workflows
+- Use the accompanying notebook (`A4_OBIA_routine.ipynb`) to run a full pipeline on your image
+- Make sure your image contains the expected Sentinel-2 bands in order: Red (B4), Green (B3), Blue (B2), and NIR (B8)
 ---
 
 **Course**: Practice: Software Development (Python)   
