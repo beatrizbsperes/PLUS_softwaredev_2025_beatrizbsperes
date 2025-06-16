@@ -1,6 +1,6 @@
 # Sentinel-2 Image Segmentation and Land Cover Classification unsing NDVI
 
-A Python module and Jupyter Notebook workflow for object-based image analysis (OBIA) of Sentinel-2 satellite imagery. This toolkit provides tools for segmentation, NDVI computation and land cover classification of vegetation, water bodies, and other surfaces. 
+A Python module and Jupyter Notebook workflow for object-based image analysis (OBIA) of Sentinel-2 satellite imagery. This toolkit provides tools for segmentation, NDVI computation and land cover classification of vegetation, water bodies and other surfaces. 
 
 ## Overview
 
@@ -39,7 +39,7 @@ jupyter notebook
 
 - Use the Python script (`a4_obia.py`) to access individual functions in other workflows
 - Use the accompanying notebook (`A4_OBIA_routine.ipynb`) to run a full pipeline on your image
-- Make sure your image contains the expected Sentinel-2 bands in order: Red (B4), Green (B3), Blue (B2), and NIR (B8)
+- Make sure your image contains the expected Sentinel-2 bands in order: Red (B4), Green (B3), Blue (B2) and NIR (B8)
 ---
 
 **Course**: Practice: Software Development (Python)   
